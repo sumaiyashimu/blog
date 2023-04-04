@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+<h1>request_object</h1>
+
+<ul>
+    <li>Application: {{=app}}</li>
+    <li>Controller: {{=cntr}}</li>
+    <li>Function: {{=fx}}</li>
+    <li>Extension: {{=extn}}</li>
+    <li>Folder: {{=folder}}</li>
+    <li>Now: {{=now}}</li>
+    <li>Client: {{=client}}</li>
+    <li>isSecure: {{=http}}</li>
+</ul>

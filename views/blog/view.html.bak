@@ -1,0 +1,46 @@
+{{extend 'layout.html'}}
+<!-- <h1>view</h1>
+{{for x in rows: }}
+
+<div class='row'>
+    <img class='col col-lg-4 col-md-4 col-sm-4' scr='{{=mx.blog_image}}' alt='blog image'/>
+    <div class='col col-lg-8'>
+        <P class='lead'>
+            <b><a href='{{mx.blog_url}}' target='_new'> '{{mx.blog_tittle}}'</a></b>
+            
+        </P>
+        <P>
+            <b>Category:</b>
+            {{mx.blog_category}}
+        </P>
+        <p>
+            {{mx.blog_details}}
+        </p>
+        <p>
+            {{mx.blog_date_posted}}
+        </p>
+    </div>
+</div>
+{{pass}} -->
+
+
+
+
+{{for x in rows: }}
+
+<div class='row'>
+    <div class='col col-lg-12'>
+       
+        <P>
+            <b>Category:</b>
+            {{blog_category}}
+        </P>
+        <p>
+            {{blog_details}}
+        </p>
+        <p>
+            {{blog_date_posted}}
+        </p>
+    </div>
+</div>
+{{pass}}
