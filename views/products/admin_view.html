@@ -1,0 +1,21 @@
+{{extend 'layout.html'}}
+<h1>This is the products/admin_view.html template</h1>
+
+<table class="table">
+
+    <tr>
+        <th>product Id</th>
+        <th>product name</th>
+        <th>order price</th>
+        <th>order date</th>
+    </tr>
+  {{for x in rows:}}
+    <tr>
+   <td>{{=x[0]}}</td>
+   <td>{{=x[1]}}</td>
+   <td>{{=x[2]}}</td>
+   <td>{{=x[3]}}</td>
+    </tr>
+    
+    {{pass}}
+</table>

@@ -177,3 +177,16 @@ db.define_table('contacts',
                 Field('email'),
                 Field('web')
                 )
+
+db.define_table('products',
+                Field('product_name'),
+                Field('current_price')
+                )
+
+db.define_table('orders',
+                Field('order_date', type='date',requires=IS_DATE()),
+                Field('product_id', type='integer'),
+                Field('order_price',type='double'),
+                Field('order_id',   type='integer')
+                
+               )
